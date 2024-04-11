@@ -1,0 +1,51 @@
+<html>
+<head>
+    <style>
+        body {
+            width: 450px;
+            padding: 10px;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        pre {
+            font-size: 12px;
+            width: 400px;
+            padding: 10px;
+            background: lightgray;
+            border: 1px solid gray;
+            overflow: auto;
+        }
+
+        div {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Favro Branch</h1>
+    <div id="no-card">
+        Geen favro card geselecteerd. <a href="#" id="go-favro">Ga naar favro</a> en selecteer een card.
+    </div>
+    <div id="card">
+        <form id="form">
+            <select id="type">
+                <option></option>
+                <option selected="selected">feature</option>
+                <option>bugfix</option>
+            </select>
+            <span id="issue"></span>
+            <a id="text-capitalize" href="#">Aa</a>
+            <a id="text-upper" href="#">A</a>
+            <a id="text-lower" href="#">a</a>
+            <input name="text" id="text" type="text" />
+            <button id="generate" type="submit">Go</button>
+            <pre style="display: none;" id="checkout"></pre>
+        </form>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
